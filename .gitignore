@@ -1,1 +1,6 @@
 dist-newstyle
+.vscode/settings.json
+.vscode/tasks.json
+examples/.DS_Store
+examples/tcp-window/.vscode/tasks.json
+src/.DS_Store

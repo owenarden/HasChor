@@ -64,17 +64,6 @@ executable tests
         , bytestring
         , network-simple
 
-executable tcp-window
-    hs-source-dirs:   examples/tcp-window
-    main-is:          Main.hs
-    default-language: GHC2021
-    ghc-options: -threaded
-    build-depends:
-        , HasChor
-        , base    >= 4.16 && < 4.20
-        , split   >= 0.2  && < 0.3
-        , time    >= 1.11 && < 1.13
-
 executable bookseller-0-network
     hs-source-dirs:   examples/bookseller-0-network
     main-is:          Main.hs
@@ -208,3 +197,14 @@ executable playground
     build-depends:
         , HasChor
         , base         >= 4.16 && < 4.20
+
+executable tcp-window
+    hs-source-dirs:   examples/tcp-window
+    main-is:          Main.hs
+    default-language: GHC2021
+    ghc-options: -threaded
+    build-depends:
+        , HasChor
+        , async                >= 2.2  && < 2.3
+        , random 
+        , base >= 4.16 && < 4.20
